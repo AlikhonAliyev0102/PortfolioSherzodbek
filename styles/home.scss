@@ -78,3 +78,14 @@
         }
     }
 }
+@media(max-width: 510px){
+    .home{
+        padding-left: 30px !important;
+        padding-bottom: 0px !important;
+        padding-top: 0 !important;
+
+        &__img{
+            display: none;
+        }
+    }
+}

@@ -64,3 +64,36 @@
         padding-left: 100px;
     }
 }
+@media(max-width: 510px){
+    .portfolio{
+        padding-left: 30px !important;
+        padding-bottom: 0px !important;
+        padding-top: 0 !important;
+        &__project{
+            
+            &-cart{
+                .items{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        border: 5px solid blue;
+                        height: 200px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        font-weight: 500;
+                        &:hover{
+                            color: #EC1839;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

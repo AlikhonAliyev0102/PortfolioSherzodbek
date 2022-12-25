@@ -159,3 +159,47 @@
         }
     }
 }
+@media(max-width: 510px){
+    .navbar{
+        div{
+            .res{
+                left: 30px;
+            }
+            aside{
+                bottom: 0;
+                height: 50px !important;
+                width: 100% !important;
+                
+                nav{
+                    margin: 0 !important;
+                    bottom: 0;    
+                    padding: 0 !important;   
+
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 !important;                
+
+                        li{
+                            a{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                h1{
+                                    display: none;
+                                }
+                                img{
+                                    margin-right: 0px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
