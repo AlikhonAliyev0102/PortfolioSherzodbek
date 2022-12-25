@@ -1,0 +1,240 @@
+.about{
+    padding-left: 250px;
+    
+    
+    &__head{
+        max-width: 100%;
+        h1{
+            font-size: 40px;
+            color: #302E4D;
+            font-weight: 700;
+            position: relative;
+            &::before{
+                content: '';
+                height: 4px;
+                width: 50px;
+                background-color: #EC1839;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            &::after{
+                content: '';
+                height: 4px;
+                width: 25px;
+                background-color: #EC1839;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                margin-top: 8px;
+            }
+        }
+        h3{
+            margin-top: 60px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #302E4D;
+            font-weight: 700;
+            span{
+                color: #EC1839;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 25px;
+            color: #302E4D;
+        }
+    }
+    &__title{
+        color: #302E4D;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 100px;
+        &-info{
+            position: relative;
+
+            &-text{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                .item{
+                    
+                    p{
+                        display: flex;
+                        font-weight: 700;
+                        padding: 10px 0;
+                        border-bottom: 1px solid #E8DFEC;
+                        font-size: 16px;
+                        span{
+                            padding-left: 8px;
+                            font-weight: 400;
+                        }
+                        
+                    }
+                }
+            }
+            &-btn{
+                margin-top: 150px;
+            }
+        }
+        &-skills{
+            margin-left: 40px;
+            .skills-items{
+                display: flex;
+                flex-direction: column;
+                .progress-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h5{
+                        line-height: 40px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        color: #302E4D;
+                    }
+
+                }
+                .progress{
+                    height: 7px;
+                    border-radius: 4px;
+                    width: 390px;
+                    background-color: #E8DFEC;
+                    position: relative;
+                    &-in{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        border-radius: 4px;
+                        width: 35%;
+                        background-color: #EC1839;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &__master{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        &-education{
+            margin-top: 30px;
+            h1{
+                font-size: 24px;
+                margin-bottom: 30px;
+                font-weight: 700;
+                color: #302E4D;
+            }
+            &-title{
+                background-color: #FDF9FF;
+                padding: 30px 15px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px rgb(216, 214, 214), -5px -5px 5px rgb(216, 214, 214);
+                width: 95%;
+                .text{
+                    position: relative;
+                    padding-left: 37px;
+                    padding-bottom: 50px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 1px;
+                        height: 100%;
+                        left: 7px;
+                        top: 0;
+                        background-color: red;
+                    }
+                    .circle{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        background-color: #EC1839;
+                    }
+                    h3{
+                       font-size: 14px;
+                       font-weight: 400;
+                       color: #504E70; 
+                       margin-bottom: 12px;
+                    }
+                    h4{
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                        color: #504E70;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 25px;
+                        text-align: justify;
+                        color: #504E70;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:1024px){
+    .about{
+        padding-left: 100px;
+        &__title{
+            &-skills{
+                margin-left: 0;
+            }
+        }
+        
+    }
+
+}
+@media(max-width:659px){
+    .about{
+        &__title{
+            color: #302E4D;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+            &-info{
+                position: relative;
+    
+                &-text{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                    .item{
+                        
+                        p{
+                            display: flex;
+                            flex-direction: column;
+                            font-weight: 700;
+                            padding: 10px 0;
+                            border-bottom: 1px solid #E8DFEC;
+                            font-size: 16px;
+                            span{
+                                padding-left: 0px;
+                                font-weight: 400;
+                            }
+                            
+                        }
+                        &:first-child{
+                            width: 100px;
+                        }
+                        &:last-child{
+                            margin-left: -50px;
+                        }
+                    }
+                }
+
+            }
+            &-skills{
+                margin-left: 0;
+            }
+           
+        }
+    }
+}

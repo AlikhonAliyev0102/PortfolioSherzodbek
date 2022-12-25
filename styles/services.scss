@@ -1,0 +1,102 @@
+.container{
+    .services{
+        padding-left: 250px;
+        &__head{
+            margin-bottom: 60px;
+            h1{
+                font-size: 40px;
+                color: #302E4D;
+                font-weight: 700;
+                position: relative;
+                &::before{
+                    content: '';
+                    height: 4px;
+                    width: 50px;
+                    background-color: #EC1839;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                }
+                &::after{
+                    content: '';
+                    height: 4px;
+                    width: 25px;
+                    background-color: #EC1839;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    margin-top: 8px;
+                }
+            }
+        }
+        &__cart{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            &-items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 30px 15px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                background-color: #fff;
+                border-radius: 10px;
+                border: 1px solid #E8DFEC;
+                transition: all 0.3S ease;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0 0 20px rgb(48 46 77 / 15%);
+                }
+                &:hover .img{
+                    
+                        background-color: red;
+                        border-radius: 50%;
+                        text-align: center;
+                        // transition: all 0.3s ease;
+                        
+                    
+                }
+                &:hover .img img{
+                    width: 25px;
+                    transition: all 0.2s ease;
+                    fill: rgb(255, 255, 255);
+                }
+                .img{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 30px;
+                    width: 60px;
+                    height: 60px;
+                    
+                    img{
+                        
+                        width: 30px;
+                    }
+                }
+                .title{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: #605F6C;
+                }
+                .text{
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #504E70;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    .container{
+        .services{
+            padding-left: 100px;
+        }
+    }
+}

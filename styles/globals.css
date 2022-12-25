@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 html,
 body {
   padding: 0;
@@ -10,17 +13,32 @@ a {
   color: inherit;
   text-decoration: none;
 }
+li{
+  list-style-type: none;
+}
+.container {
+  padding: 0 2rem;
+}
+.btn{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: #EC1839;
+  transition: all 0.3s ease;
+}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.about{
+  transition: width 2s ease-out 1s;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+
